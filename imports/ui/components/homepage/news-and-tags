@@ -1,0 +1,98 @@
+<div className="col-md-4">
+			<div  id="box">
+				<div className = "rect">
+					<div className="authorBox">
+						<label htmlFor="exampleInputPassword1">{this.props.postDetail.title}</label>
+					</div>
+						  <div>
+						  	{this.props.postDetail.description}
+						  </div>
+						  <div>
+						  	
+						  </div>
+						  <div>
+						  	<button className="btn btn-primary floatclass" >Edit</button>
+						  	<button className="btn btn-warning" onClick={this.deletePost.bind(this)}>Delete</button>
+						  </div>
+					
+				</div>
+			</div>
+			</div>
+
+
+
+			if(tagwieght<5){
+			tagclass = "small";
+		}else if(tagwieght>=5 && tagwieght < 20){
+			tagclass = 'medium';
+		}else if(tagwieght >=20 && tagwieght <50){
+			tagclass = 'larger';
+		}else{
+			tagclass = 'largest';
+		}
+
+
+
+https://stackoverflow.com/questions/3717314/what-is-the-formula-to-calculate-the-font-size-for-tags-in-a-tagcloud
+
+
+
+<div
+              style={{
+                fontFamily: 'serif',
+                fontSize: 40,
+                fontStyle: 'italic',
+                fontWeight: 'bold',
+                color: randomColor()
+              }}>Futurama</div>
+           
+            <div style={styles.large}>Transformers</div>
+            <div style={styles.large}>Simpsons</div>
+            <div style={styles.large}>Dragon Ball</div>
+            <div style={styles.large}>Rick & Morty</div>
+            <div style={{fontFamily: 'courier'}}>He man</div>
+            <div style={{fontSize: 30}}>World trigger</div>
+            <div style={{fontStyle: 'italic'}}>Avengers</div>
+            <div style={{fontWeight: 200}}>Family Guy</div>
+            <div style={{color: 'green'}}>American Dad</div>
+            <div className="tag-item-wrapper">
+              <div>
+                Hover Me Please!
+              </div>
+              <div className="tag-item-tooltip">
+                HOVERED!
+              </div>
+            </div>
+            <div>Gobots</div>
+            <div>Thundercats</div>
+            <div>M.A.S.K.</div>
+            <div>GI Joe</div>
+            <div>Inspector Gadget</div>
+            <div>Bugs Bunny</div>
+            <div>Tom & Jerry</div>
+            <div>Cowboy Bebop</div>
+            <div>Evangelion</div>
+            <div>Bleach</div>
+            <div>GITS</div>
+            <div>Pokemon</div>
+            <div>She Ra</div>
+            <div>Fullmetal Alchemist</div>
+            <div>Gundam</div>
+            <div>Uni Taisen</div>
+            <div>Pinky and the Brain</div>
+            <div>Bobs Burgers</div>
+            <div style={styles.small}>Dino Riders</div>
+            <div style={styles.small}>Silverhawks</div>
+            <div style={styles.small}>Bravestar</div>
+            <div style={styles.small}>Starcom</div>
+            <div style={styles.small}>Cops</div>
+            <div style={styles.small}>Alfred J. Kwak</div>
+            <div style={styles.small}>Dr Snuggles</div>
+
+
+       {
+							allTags.map((res) => {
+								
+								return <SingleTag key={res._id} tagDetail={res} noOfPost={allTags[0].noOfPost} />
+							}) 
+						}
